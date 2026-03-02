@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    Main activity colors-->
+    <color name="honeydew">#E8F7EE</color>
+    <color name="palesky">#C9D6EA</color>
+    <color name="ashgrey">#B8C4BB</color>
+    <color name="burgundy">#721121</color>
+    <color name="spaceindigo">#1B264F</color>
+
+
+<!--    Table activity colors-->
+
+    <color name="emerald">#69B578</color>
+    <color name="fern">#3A7D44</color>
+    <color name="darkspruce">#254D32</color>
+    <color name="powderblue">#8EA8C3</color>
+    <color name="richcerulean">#406E8E</color>
+</resources>

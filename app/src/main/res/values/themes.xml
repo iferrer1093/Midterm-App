@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CampusCoffeeOrder" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CampusCoffeeOrder" parent="Base.Theme.CampusCoffeeOrder" />
+
+    <style name="Theme.CampusCoffeeOrder.Main" parent="Base.Theme.CampusCoffeeOrder">
+        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorSecondary" >@color/ashgrey</item>
+        <item name="colorAccent" >@color/ashgrey</item>
+        <item name="colorBackgroundFloating" >@color/ashgrey</item>
+        <item name="colorPrimaryDark" >@color/ashgrey</item>
+    </style>
+
+    <style name="Theme.CampusCoffeeOrder.Table" parent="Base.Theme.CampusCoffeeOrder">
+        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorPrimary" >@color/ashgrey</item>
+    </style>
+
+<!--    Get into this sucker and fix all the styling. -->
+
+
+
+</resources>
+
+<!--Make this like the table style since it'd be fairly easy. At least add a few things to that if possible. -->
