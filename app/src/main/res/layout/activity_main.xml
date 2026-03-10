@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
+<!--
+Wack Styles in after logic is all figured out.
+That should be one of the last things that you do.
+Styles are going to be what sets all of this junk up here. Get it configured to look right in emulator and main
+
+-->
     <TextView
+        android:id="@+id/mainTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="12dp"
+        android:text="Campus Coffee Order"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/mainCoffeeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTitleTextView"
+        android:layout_marginTop="-600dp"
+        android:hint="Enter the name of your coffee order" />
+
+    <CheckBox
+        android:id="@+id/mainCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Decaf"
+        android:layout_below="@id/mainCoffeeEditText"
+        android:layout_marginTop="12dp"
+        />
+    <RadioGroup
+        android:id="@+id/mainRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainCheckBox"
+        android:layout_marginTop="6dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/radioOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iced" />
+
+        <RadioButton
+            android:id="@+id/radioTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mainSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainRadioGroup"
+        android:text="Submit Coffee Order"
+        android:layout_marginTop="12dp"
+
+        />
+
+
+
+</RelativeLayout>
