@@ -23,19 +23,13 @@
             android:layout_weight="1"
             android:textSize="12dp"/>
     </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/testButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Blah Blah" />
-
-
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageCoffee"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="Turkish Coffee being poured into a mug"
+            android:src="@drawable/turkish"
+            />
     </TableRow>
-
-
 </TableLayout>
