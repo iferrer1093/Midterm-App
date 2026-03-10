@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        Log.d("Create", "onCreate called")
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -26,10 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-//        val submitButton = findViewById<Button>(R.id.mainSubmitButton)
-//        submitButton.setOnClickListener { v->
-//            Log.d("Click","fart")
-//        }
+
 
         val submitListener= object : View.OnClickListener {
             override fun onClick (view: View?) {
@@ -65,5 +63,25 @@ class MainActivity : AppCompatActivity() {
 
         submitBtn.setOnClickListener (submitListener)
 
+    }
+    override fun onStart() {
+        super.onStart()
+        Log.d("start", "onStart called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.d("resume", "onResume called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.d("pause", "onPause called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.d("stop", "onStop called")
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("destroy", "onDestroy called")
     }
 }
