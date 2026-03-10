@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -35,12 +37,21 @@ class MainActivity : AppCompatActivity() {
                     R.id.mainSubmitButton -> {
 
                         val coffeeEditText = findViewById<EditText>(R.id.mainCoffeeEditText).text.toString().trim()
+                        val decaf = findViewById<CheckBox>(R.id.mainCheckBox).isChecked
+                        val coffeeTemp = findViewById<RadioGroup>(R.id.mainRadioGroup)
+                        val radioId = coffeeTemp.checkedRadioButtonId
+
 
                         if (coffeeEditText.isEmpty()) {
                             Toast.makeText(this@MainActivity, "Coffee order name is required!", Toast.LENGTH_SHORT).show()
                         }
                         else {
                             val intent = Intent(this@MainActivity, TableActivity::class.java)
+                            intent.putExtra("coffeeText", coffeeEditText)
+                            intent.putExtra("decaf", decaf)
+                            val temp= if (radioId == R.id.radioOne) "Iced" else "Hot"
+                            intent.putExtra("temp", temp)
+
                             startActivity(intent)
                         }
                     }

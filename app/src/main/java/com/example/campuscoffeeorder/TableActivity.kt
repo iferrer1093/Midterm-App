@@ -1,6 +1,7 @@
 package com.example.campuscoffeeorder
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,5 +18,12 @@ class TableActivity : AppCompatActivity() {
             insets
         }
 
+        val coffeeEditText = intent.getStringExtra("coffeeText")
+        val coffeeDecaf = if (intent.getBooleanExtra("decaf", false)) "decaf" else "caffeinated"
+        val coffeeTemp = intent.getStringExtra("temp")
+
+        val coffeeOrderSummary = "Your coffee order is named $coffeeEditText , it's $coffeeDecaf , and it's $coffeeTemp "
+
+        findViewById<TextView>(R.id.coffeePrint).text = coffeeOrderSummary
     }
 }
