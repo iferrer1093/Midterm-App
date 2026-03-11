@@ -14,6 +14,7 @@ That should be one of the last things that you do.
 Styles are going to be what sets all of this junk up here. Get it configured to look right in emulator and main
 
 -->
+
     <TextView
         android:id="@+id/mainTitleTextView"
         android:layout_width="match_parent"
@@ -67,6 +68,15 @@ Styles are going to be what sets all of this junk up here. Get it configured to 
         android:text="Submit Coffee Order"
         android:layout_marginTop="12dp"
 
+        />
+
+    <ImageView
+        android:id="@+id/coffeeLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_emoji_food_beverage_24"
+        android:contentDescription="Coffee Logo"
+        android:layout_below="@id/mainSubmitButton"
         />
 
 
