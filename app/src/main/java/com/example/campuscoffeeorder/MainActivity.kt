@@ -26,14 +26,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+            val submitBtn = findViewById<Button>(R.id.mainSubmitButton)
 
-
-
-        val submitListener= object : View.OnClickListener {
-            override fun onClick (view: View?) {
-                when (view?.id) {
-                    R.id.mainSubmitButton -> {
-
+            submitBtn.setOnClickListener {
                         val coffeeEditText = findViewById<EditText>(R.id.mainCoffeeEditText).text.toString().trim()
                         val decaf = findViewById<CheckBox>(R.id.mainCheckBox).isChecked
                         val coffeeTemp = findViewById<RadioGroup>(R.id.mainRadioGroup)
@@ -47,21 +42,17 @@ class MainActivity : AppCompatActivity() {
                             val intent = Intent(this@MainActivity, TableActivity::class.java)
                             intent.putExtra("coffeeText", coffeeEditText)
                             intent.putExtra("decaf", decaf)
-                            val temp= if (radioId == R.id.radioOne) "Iced" else "Hot"
+                            val temp = if (radioId == R.id.radioOne) "Iced" else "Hot"
                             intent.putExtra("temp", temp)
 
                             startActivity(intent)
                         }
-                    }
-                }
-            }
+
         }
 
 
 
-        val submitBtn = findViewById<Button>(R.id.mainSubmitButton)
 
-        submitBtn.setOnClickListener (submitListener)
 
     }
     override fun onStart() {
