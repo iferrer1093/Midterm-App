@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:stretchColumns="1"
+    style="@style/TableTitle"
     >
 
     <TableRow>
@@ -13,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Coffee Order:"
-            android:textSize="22dp"/>
+            style="@style/Text"/>
     </TableRow>
     <TableRow>
         <TextView
@@ -21,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="12dp"/>
+            style="@style/Text"/>
     </TableRow>
     <TableRow>
         <ImageView

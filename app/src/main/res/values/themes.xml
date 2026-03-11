@@ -9,24 +9,21 @@
 
     <style name="Theme.CampusCoffeeOrder.Main" parent="Base.Theme.CampusCoffeeOrder">
         <item name="colorPrimary" >@color/ashgrey</item>
-        <item name="colorSecondary" >@color/ashgrey</item>
-        <item name="colorAccent" >@color/ashgrey</item>
-        <item name="colorBackgroundFloating" >@color/ashgrey</item>
-        <item name="colorPrimaryDark" >@color/ashgrey</item>
+        <item name="colorSecondary" >@color/honeydew</item>
+        <item name="colorAccent" >@color/palesky</item>
+        <item name="colorBackgroundFloating" >@color/burgundy</item>
+        <item name="colorPrimaryDark" >@color/spaceindigo</item>
     </style>
 
     <style name="Theme.CampusCoffeeOrder.Table" parent="Base.Theme.CampusCoffeeOrder">
-        <item name="colorPrimary" >@color/ashgrey</item>
-        <item name="colorPrimary" >@color/ashgrey</item>
-        <item name="colorPrimary" >@color/ashgrey</item>
-        <item name="colorPrimary" >@color/ashgrey</item>
-        <item name="colorPrimary" >@color/ashgrey</item>
+        <item name="colorPrimary" >@color/emerald</item>
+        <item name="colorSecondary" >@color/fern</item>
+        <item name="colorAccent" >@color/darkspruce</item>
+        <item name="colorBackgroundFloating" >@color/powderblue</item>
+        <item name="colorPrimaryDark">@color/richcerulean</item>
     </style>
 
-<!--    Get into this sucker and fix all the styling. -->
 
 
 
 </resources>
-
-<!--Make this like the table style since it'd be fairly easy. At least add a few things to that if possible. -->

@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/BaseTitle"
+    >
 
 <!--
 Wack Styles in after logic is all figured out.
@@ -44,7 +46,9 @@ Styles are going to be what sets all of this junk up here. Get it configured to 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mainCheckBox"
-        android:layout_marginTop="6dp">
+        android:layout_marginTop="6dp"
+        style="@style/Radio"
+        >
 
         <RadioButton
             android:id="@+id/radioOne"
@@ -72,11 +76,10 @@ Styles are going to be what sets all of this junk up here. Get it configured to 
 
     <ImageView
         android:id="@+id/coffeeLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:src="@drawable/baseline_emoji_food_beverage_24"
         android:contentDescription="Coffee Logo"
         android:layout_below="@id/mainSubmitButton"
+        style="@style/Image"
         />
 
 
